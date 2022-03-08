@@ -23,12 +23,12 @@
               }
               else
               {
-                  echo '<h2 class="error">'."Nhập sai rồi!!".'</h2>';
+                  echo '<h2 class="error">'."username or password wrong!!".'</h2>';
               }
           }
           else
           {
-              echo '<h2 class="error">'."Nhập sai rồi!!".'</h2>';
+              echo '<h2 class="error">'."username or password wrong!!".'</h2>';
           }
         }
         catch(PDOException $e)

@@ -22,19 +22,11 @@
               {
                   echo '<h1 class="admin">'."hello ".$row['username'].'</h1>';
               }
-              else
-              {
-                  echo '<h2 class="error">'."Nhập sai rồi!!".'</h2>';
-              }
-          }
-          else
-          {
-              echo '<h2 class="error">'."Nhập sai rồi!!".'</h2>';
           }
         }
         catch(PDOException $e)
         {
-            echo '<h2 class="error">'."Nhập sai rồi!!".'</h2>';
+            //echo '<h2 class="error">'."username or password wrong!!".'</h2>';
         }
     }
 ?>
