@@ -32,7 +32,7 @@
         {
             echo $e->getMessage();
         }
-    }//a' and (SELECT IF(SUBSTRING(password, 1, 1)='k',(SELECT table_name FROM information_schema.tables),'a') FROM users WHERE username like 'admin') = 'a'#
+    }
 ?>
 
 <!DOCTYPE html>

@@ -25,7 +25,7 @@
         {
             echo '<h2 class="error">'."Nhập sai rồi!!".'</h2>';
         }
-    }//a' union select null,password,null from users where username like 'admin'#
+    }
 ?>
 
 <!DOCTYPE html>
