@@ -8,6 +8,9 @@
         
         try
         {
+          if(stripos($username, "union") !== false){
+            die("No union!!");
+          }
           $sql = "SELECT * FROM users WHERE username like '".$username."' LIMIT 1";
           $stmt = $conn->prepare($sql);
           $stmt->execute();
@@ -32,7 +35,7 @@
         {
             echo $e->getMessage();
         }
-    }
+    }//a' and (SELECT IF(SUBSTRING(password, 1, 1)='k',(SELECT table_name FROM information_schema.tables),'a') FROM users WHERE username like 'admin') = 'a'#
 ?>
 
 <!DOCTYPE html>
