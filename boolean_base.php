@@ -11,20 +11,13 @@
           if(stripos($username, "union") !== false){
             die("No union!!");
           }
-          $sql = "SELECT * FROM users WHERE username like '".$username."' LIMIT 1";
+          $sql = "SELECT * FROM users WHERE username like '".$username."' and password like '".$password."' LIMIT 1";
           $stmt = $conn->prepare($sql);
           $stmt->execute();
           $row=$stmt->fetch(PDO::FETCH_ASSOC);
           if($stmt->rowCount() > 0)
           {
-              if($password == $row['password'])
-              {
-                  echo '<h1 class="admin">'."hello ".$row['username'].'</h1>';
-              }
-              else
-              {
-                  echo '<h2 class="error">'."username or password wrong!!".'</h2>';
-              }
+              echo '<h1 class="admin">'."hello ".$row['username'].'</h1>';
           }
           else
           {
@@ -33,7 +26,7 @@
         }
         catch(PDOException $e)
         {
-            echo $e->getMessage();
+            echo '<h2 class="error">'."username or password wrong!!".'</h2>';
         }
     }
 ?>
