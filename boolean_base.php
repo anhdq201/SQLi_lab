@@ -46,15 +46,15 @@
   <title>Login Admin</title>
   <link rel="stylesheet" href="css\style.css"/>
 </head>
-<body style="background-color: lightgrey;">
+<body style="background-color: lightgreen;">
   <div class="login-page">
     <div class="form">
-      <div class="title" style="color: lightgrey;">ERROR_BASE</div>
+      <div class="title" style="color: lightgreen;">ERROR_BASE</div>
       <form class="login-form" action="#" method="post">
         <input type="text" placeholder="User Name" name="username"/>
         <input type="password" placeholder="Password" name="password"/>
         <div class="inputfield">
-          <input type="submit" value="login" name="login" class="btn" style="background-color: lightgrey;">
+          <input type="submit" value="login" name="login" class="btn" style="background-color: lightgreen;">
         </div>
       </form>
     </div>

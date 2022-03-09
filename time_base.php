@@ -26,7 +26,7 @@
         }
         catch(PDOException $e)
         {
-            //echo '<h2 class="error">'."username or password wrong!!".'</h2>';
+            //echo $e;
         }
     }
 ?>

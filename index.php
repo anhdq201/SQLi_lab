@@ -12,8 +12,9 @@
       <div class="title" style="color: red;">OPTIONS</div>
         <div class="inputfield">
           <a style="text-decoration: none" href="union_base.php" class="btn">union_base lab</a>
-          <a style="text-decoration: none" href="error_base.php" class="btn">error_base lab</a>
+          <a style="text-decoration: none" href="error_base.php" class="btn">boolean_base lab</a>
           <a style="text-decoration: none" href="time_base.php" class="btn">time_base lab</a>
+          <a style="text-decoration: none" href="error_base.php" class="btn">error_base lab</a>
         </div>
     </div>
   </div>
