@@ -8,8 +8,8 @@
         
         try
         {
-          if(stripos($username, "union") !== false){
-            die("No union!!");
+          if(stripos($username, "union") !== false || stripos($username, "if") !== false){
+            die("No injection!!");
           }
           $sql = "SELECT * FROM users WHERE username like '".$username."' LIMIT 1";
           $stmt = $conn->prepare($sql);
